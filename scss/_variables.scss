@@ -1,0 +1,33 @@
+/*********************************\
+    #Variables
+\*********************************/
+
+$color-Red: #ff6257;
+$color-Blue-800: #242742;
+$color-Blue-700: #36384e;
+$color-Grey: #949494;
+$color-White: #ffffff;
+
+/*********************************\
+    #Font
+\*********************************/
+
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("../assets/fonts/Roboto-Bold.ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("../assets/fonts/Roboto-Regular.ttf");
+  font-weight: 400;
+}
+
+@mixin Roboto-Regular {
+  font-family: "Roboto-Regular";
+}
+
+@mixin Roboto-Bold {
+  font-family: "Roboto-Bold";
+}

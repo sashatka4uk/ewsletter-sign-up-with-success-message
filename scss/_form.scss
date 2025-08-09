@@ -1,0 +1,40 @@
+/*********************************\
+    #Form
+\*********************************/
+
+@use "variables" as *;
+
+.form {
+  @media (max-width: 480px) {
+    padding-bottom: 44px;
+  }
+  &__label {
+    @include Roboto-Bold;
+    line-height: 150%;
+    font-size: 0.75rem;
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  &__input {
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 1.5em;
+
+    width: 100%;
+    line-height: 150%;
+    padding: 1em 1.5em;
+    border-radius: 8px;
+    border: 1px solid $color-Grey;
+    @include Roboto-Regular;
+    @media (max-width: 768px) {
+      margin-bottom: 1em;
+    }
+
+    &:focus {
+      outline: none;
+      border: 1px solid $color-Blue-800;
+      color: $color-Blue-800;
+    }
+  }
+}

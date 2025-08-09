@@ -1,0 +1,117 @@
+/*********************************\
+    #Subscription
+\*********************************/
+
+@use "variables" as *;
+
+.subscription {
+  max-width: 56.5em;
+  border-radius: 2.25em;
+  padding: 1.5em 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 4em;
+  background-color: $color-White;
+
+  @media (max-width: 768px) {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    row-gap: 2.5em;
+    max-width: 38em;
+    margin: 73px 0;
+    padding: 2.625em 2.5em;
+  }
+  @media (max-width: 480px) {
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0px;
+    justify-content: center;
+    max-width: 375px;
+    border-radius: 0;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2em;
+    flex: 0 0 23.5em;
+    @media (max-width: 768px) {
+      flex: 0 0 24.625em;
+      row-gap: 1.5em;
+      max-width: 33em;
+    }
+    @media (max-width: 480px) {
+      max-width: 327px;
+      //   padding: 1.5em;
+    }
+  }
+
+  &__heading {
+    font-size: 3.5rem;
+    line-height: 100%;
+    color: $color-Blue-800;
+    @include Roboto-Bold;
+    @media (max-width: 480px) {
+      font-size: 2.5rem;
+    }
+  }
+
+  &__sub-text {
+    line-height: 150%;
+    color: $color-Blue-800;
+  }
+
+  &__benefits {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+
+    & svg {
+      flex: 0 0 21px;
+    }
+  }
+  &__benefit {
+    color: $color-Blue-800;
+    line-height: 150%;
+    list-style: none;
+    display: flex;
+    column-gap: 16px;
+    align-items: center;
+    @media (max-width: 480px) {
+      align-items: flex-start;
+    }
+  }
+}
+
+/*********************************\
+    #Subscription images
+\*********************************/
+
+@media (max-width: 768px) {
+  .subscription__content__img--desktop,
+  .subscription__content__img--mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .subscription__content__img--desktop,
+  .subscription__content__img--tablet {
+    display: none;
+  }
+  .subscription__content__img--mobile {
+    display: block;
+  }
+}
+
+@media (min-width: 769px) {
+  .subscription__content__img--mobile,
+  .subscription__content__img--tablet {
+    display: none;
+  }
+  .subscription__content__img--desktop {
+    display: block;
+  }
+}

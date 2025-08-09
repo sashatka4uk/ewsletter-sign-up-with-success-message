@@ -1,0 +1,22 @@
+/*********************************\
+    #Button
+\*********************************/
+
+@use "variables" as *;
+
+.btn {
+  padding: 16px 16px;
+  border-radius: 8px;
+  width: 100%;
+  background: $color-Blue-800;
+  color: $color-White;
+  @include Roboto-Bold;
+  line-height: 150%;
+  border: none;
+  font-size: 1rem;
+
+  &:hover {
+    background: linear-gradient(90deg, #ff6a3a 0%, #ff527b 100%);
+    box-shadow: 0px 16px 32px rgba(255, 97, 85, 0.5);
+  }
+}

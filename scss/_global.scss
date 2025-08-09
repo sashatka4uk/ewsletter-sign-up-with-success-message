@@ -1,0 +1,32 @@
+/*********************************\
+    #Global
+\*********************************/
+@use "variables" as *;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  background-color: $color-Blue-700;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include Roboto-Regular;
+  @media (max-width: 768px) {
+    height: auto;
+  }
+
+  @media (max-width: 480px) {
+  }
+}
