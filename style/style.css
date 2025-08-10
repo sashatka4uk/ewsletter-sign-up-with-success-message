@@ -46,20 +46,19 @@ body {
 /*********************************\
     #Subscription
 \*********************************/
+.open.subscription {
+  display: flex;
+}
+
 .subscription {
   max-width: 56.5em;
   border-radius: 2.25em;
   padding: 1.5em 2em;
+  display: none;
   align-items: center;
   justify-content: center;
   column-gap: 4em;
   background-color: #ffffff;
-}
-.subscription__open {
-  display: flex;
-}
-.subscription__close {
-  display: none;
 }
 @media (max-width: 768px) {
   .subscription {
@@ -223,6 +222,10 @@ body {
 /*********************************\
     #Success
 \*********************************/
+.close.success {
+  display: none;
+}
+
 .success {
   max-width: 31.5em;
   padding: 3.75em 4em;
@@ -230,13 +233,7 @@ body {
   border-radius: 2.25em;
   flex-direction: column;
   row-gap: 2em;
-  display: none;
-}
-.success__open {
   display: flex;
-}
-.success__close {
-  display: none;
 }
 @media (max-width: 480px) {
   .success {

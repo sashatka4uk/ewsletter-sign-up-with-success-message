@@ -14,20 +14,18 @@ const userEmail = document.querySelector(".success__email");
 formBtn.addEventListener("click", function (e) {
   // Remove default behavior to submit form when pressed
   e.preventDefault();
-  subscriptionBox.classList.remove("subscription__open");
-  subscriptionBox.classList.add("subscription__close");
+  subscriptionBox.classList.toggle("open");
 
   userEmail.textContent = formEmail.value;
-  successBox.classList.add("success__open");
-  successBox.classList.remove("success__close");
+  successBox.classList.toggle("close");
 });
 
 successBox.addEventListener("click", function (e) {
   // Remove default behavior to submit form when pressed
   e.preventDefault();
-  subscriptionBox.classList.add("subscription__open");
-  subscriptionBox.classList.remove("subscription__close");
 
-  successBox.classList.remove("success__open");
-  successBox.classList.add("success__close");
+  subscriptionBox.classList.toggle("open");
+
+  userEmail.textContent = formEmail.value;
+  successBox.classList.toggle("close");
 });

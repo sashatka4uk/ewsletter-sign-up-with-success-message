@@ -4,23 +4,19 @@
 
 @use "variables" as *;
 
+.open.subscription {
+  display: flex;
+}
 .subscription {
   max-width: 56.5em;
   border-radius: 2.25em;
   padding: 1.5em 2em;
-
+  display: none;
   align-items: center;
   justify-content: center;
   column-gap: 4em;
   background-color: $color-White;
 
-  &__open {
-    display: flex;
-  }
-
-  &__close {
-    display: none;
-  }
   @media (max-width: 768px) {
     flex-direction: column-reverse;
     align-items: flex-start;
