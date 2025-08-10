@@ -1,0 +1,51 @@
+/*********************************\
+    #Success
+\*********************************/
+@use "variables" as *;
+
+.success {
+  max-width: 31.5em;
+  padding: 3.75em 4em;
+  background-color: $color-White;
+  border-radius: 2.25em;
+  flex-direction: column;
+  row-gap: 2em;
+  display: none;
+
+  &__open {
+    display: flex;
+  }
+
+  &__close {
+    display: none;
+  }
+
+  @media (max-width: 480px) {
+    max-width: 100%;
+    padding: 0 1.5em;
+    border-radius: 0;
+    // align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+    &__btn {
+      margin-top: 263px;
+    }
+  }
+  &__heading {
+    font-size: 3.5rem;
+    line-height: 100%;
+    @include Roboto-Bold;
+    color: $color-Blue-800;
+  }
+
+  &__text {
+    font-size: 1rem;
+    line-height: 150%;
+
+    & span {
+      color: $color-Blue-800;
+      @include Roboto-Bold;
+    }
+  }
+}

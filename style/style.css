@@ -50,11 +50,16 @@ body {
   max-width: 56.5em;
   border-radius: 2.25em;
   padding: 1.5em 2em;
-  display: flex;
   align-items: center;
   justify-content: center;
   column-gap: 4em;
   background-color: #ffffff;
+}
+.subscription__open {
+  display: flex;
+}
+.subscription__close {
+  display: none;
 }
 @media (max-width: 768px) {
   .subscription {
@@ -213,4 +218,49 @@ body {
 .btn:hover {
   background: linear-gradient(90deg, #ff6a3a 0%, #ff527b 100%);
   box-shadow: 0px 16px 32px rgba(255, 97, 85, 0.5);
+}
+
+/*********************************\
+    #Success
+\*********************************/
+.success {
+  max-width: 31.5em;
+  padding: 3.75em 4em;
+  background-color: #ffffff;
+  border-radius: 2.25em;
+  flex-direction: column;
+  row-gap: 2em;
+  display: none;
+}
+.success__open {
+  display: flex;
+}
+.success__close {
+  display: none;
+}
+@media (max-width: 480px) {
+  .success {
+    max-width: 100%;
+    padding: 0 1.5em;
+    border-radius: 0;
+    justify-content: center;
+    height: 100vh;
+  }
+  .success__btn {
+    margin-top: 263px;
+  }
+}
+.success__heading {
+  font-size: 3.5rem;
+  line-height: 100%;
+  font-family: "Roboto-Bold";
+  color: #242742;
+}
+.success__text {
+  font-size: 1rem;
+  line-height: 150%;
+}
+.success__text span {
+  color: #242742;
+  font-family: "Roboto-Bold";
 }

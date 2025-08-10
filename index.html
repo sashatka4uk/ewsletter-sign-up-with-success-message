@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="style/style.css" />
   </head>
   <body>
-    <div class="subscription">
+    <div class="subscription subscription__open">
       <div class="subscription__content">
         <h2 class="subscription__heading">Stay updated!</h2>
 
@@ -113,5 +113,21 @@
         />
       </div>
     </div>
+    <div class="success success__close">
+      <img
+        src="assets/images/icon-success.svg"
+        alt="Success icon"
+        width="64"
+        height="64"
+      />
+      <h2 class="success__heading">Thanks for subscribing!</h2>
+      <p class="success__text">
+        A confirmation email has been sent to
+        <span class="success__email">ash@loremcompany.com.</span> Please open it
+        and click the button inside to confirm your subscription.
+      </p>
+      <button class="success__btn btn">Dismiss message</button>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
